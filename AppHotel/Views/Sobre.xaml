@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+    <VerticalStackLayout Padding="10"
+                         HorizontalOptions="Center">
+        
+        <Label
+            Padding="20"
+            Text="Sobre"
+            FontFamily="CauseBold"
+            FontSize="50"/>
+
+        <Label
+            Padding="10"
+            Text="Este App foi criado com base na agenda 13 do curso técnico em DS - ETEC pelo desenvolvedor: Daniel Leal"
+            FontFamily="Cause"
+            FontSize="25"/>
+
+        <Label
+            Padding="10"
+            Text="Ano de lançamento: 2026"
+            FontFamily="CauseLight"
+            FontSize="15"/>
+
+    </VerticalStackLayout>
+</ContentPage>
