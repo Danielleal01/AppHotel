@@ -7,10 +7,11 @@
              BackgroundColor="{StaticResource Black}">
     <VerticalStackLayout Padding="10"
                          HorizontalOptions="Center">
-        
+
         <Label
             Padding="20"
             Text="Sobre"
+            HorizontalTextAlignment="Center"
             FontFamily="CauseBold"
             FontSize="50"/>
 
@@ -25,6 +26,10 @@
             Text="Ano de lançamento: 2026"
             FontFamily="CauseLight"
             FontSize="15"/>
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
 
     </VerticalStackLayout>
 </ContentPage>

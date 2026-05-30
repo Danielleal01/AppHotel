@@ -9,8 +9,9 @@
                          Padding="10">
         <Label 
             Text="Cálculo da Diária"
-            FontFamily="Cause"
+            FontFamily="CauseBold"
             FontSize="50"
+            HorizontalTextAlignment="Center"
             TextColor="{StaticResource White}"/>
 
         <Frame Padding="10">
@@ -50,7 +51,8 @@
                 <Label Text="Escolha sua Suíte"/>
 
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"/>
+                        Title="Selecione sua Acomodação"
+                        ItemDisplayBinding="{Binding Descrição}"/>
 
                 <Frame Padding="10"
                        Margin="10">
@@ -59,6 +61,7 @@
                         <HorizontalStackLayout>
                             <Label Text="Check_in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy"/>
                         </HorizontalStackLayout>
 
@@ -70,7 +73,9 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar"/>
+                <Button Text="Avançar"
+                        HorizontalOptions="Center"
+                        Clicked="Button_Clicked"/>
 
 
             </VerticalStackLayout>
